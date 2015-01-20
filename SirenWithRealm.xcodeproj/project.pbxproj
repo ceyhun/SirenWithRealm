@@ -1,0 +1,464 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3AD4467B1A6EF8F000900CD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD4467A1A6EF8F000900CD2 /* AppDelegate.swift */; };
+		3AD4467D1A6EF8F000900CD2 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD4467C1A6EF8F000900CD2 /* MasterViewController.swift */; };
+		3AD4467F1A6EF8F000900CD2 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD4467E1A6EF8F000900CD2 /* DetailViewController.swift */; };
+		3AD446821A6EF8F000900CD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AD446801A6EF8F000900CD2 /* Main.storyboard */; };
+		3AD446841A6EF8F000900CD2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AD446831A6EF8F000900CD2 /* Images.xcassets */; };
+		3AD446871A6EF8F000900CD2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AD446851A6EF8F000900CD2 /* LaunchScreen.xib */; };
+		3AD446931A6EF8F000900CD2 /* SirenWithRealmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD446921A6EF8F000900CD2 /* SirenWithRealmTests.swift */; };
+		3AD4469D1A6EF91700900CD2 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AD4469C1A6EF91700900CD2 /* Realm.framework */; };
+		3AD4469F1A6EF91E00900CD2 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AD4469E1A6EF91E00900CD2 /* libc++.dylib */; };
+		3AD446A11A6EF92700900CD2 /* RLMSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD446A01A6EF92700900CD2 /* RLMSupport.swift */; };
+		3AD446A71A6EFA0600900CD2 /* Siren.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3AD446A51A6EFA0600900CD2 /* Siren.bundle */; };
+		3AD446A81A6EFA0600900CD2 /* Siren.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD446A61A6EFA0600900CD2 /* Siren.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3AD4468D1A6EF8F000900CD2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3AD4466D1A6EF8F000900CD2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3AD446741A6EF8F000900CD2;
+			remoteInfo = SirenWithRealm;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3AD446751A6EF8F000900CD2 /* SirenWithRealm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SirenWithRealm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AD446791A6EF8F000900CD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AD4467A1A6EF8F000900CD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3AD4467C1A6EF8F000900CD2 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		3AD4467E1A6EF8F000900CD2 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		3AD446811A6EF8F000900CD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3AD446831A6EF8F000900CD2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3AD446861A6EF8F000900CD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		3AD4468C1A6EF8F000900CD2 /* SirenWithRealmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SirenWithRealmTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AD446911A6EF8F000900CD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AD446921A6EF8F000900CD2 /* SirenWithRealmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SirenWithRealmTests.swift; sourceTree = "<group>"; };
+		3AD4469C1A6EF91700900CD2 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		3AD4469E1A6EF91E00900CD2 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		3AD446A01A6EF92700900CD2 /* RLMSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RLMSupport.swift; sourceTree = "<group>"; };
+		3AD446A51A6EFA0600900CD2 /* Siren.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Siren.bundle; sourceTree = "<group>"; };
+		3AD446A61A6EFA0600900CD2 /* Siren.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Siren.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3AD446721A6EF8F000900CD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AD4469F1A6EF91E00900CD2 /* libc++.dylib in Frameworks */,
+				3AD4469D1A6EF91700900CD2 /* Realm.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AD446891A6EF8F000900CD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3AD4466C1A6EF8F000900CD2 = {
+			isa = PBXGroup;
+			children = (
+				3AD446771A6EF8F000900CD2 /* SirenWithRealm */,
+				3AD4468F1A6EF8F000900CD2 /* SirenWithRealmTests */,
+				3AD446761A6EF8F000900CD2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3AD446761A6EF8F000900CD2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3AD446751A6EF8F000900CD2 /* SirenWithRealm.app */,
+				3AD4468C1A6EF8F000900CD2 /* SirenWithRealmTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3AD446771A6EF8F000900CD2 /* SirenWithRealm */ = {
+			isa = PBXGroup;
+			children = (
+				3AD4467A1A6EF8F000900CD2 /* AppDelegate.swift */,
+				3AD4467C1A6EF8F000900CD2 /* MasterViewController.swift */,
+				3AD4467E1A6EF8F000900CD2 /* DetailViewController.swift */,
+				3AD446801A6EF8F000900CD2 /* Main.storyboard */,
+				3AD446831A6EF8F000900CD2 /* Images.xcassets */,
+				3AD446851A6EF8F000900CD2 /* LaunchScreen.xib */,
+				3AD446A41A6EFA0600900CD2 /* Siren */,
+				3AD446781A6EF8F000900CD2 /* Supporting Files */,
+			);
+			path = SirenWithRealm;
+			sourceTree = "<group>";
+		};
+		3AD446781A6EF8F000900CD2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3AD4469E1A6EF91E00900CD2 /* libc++.dylib */,
+				3AD446A01A6EF92700900CD2 /* RLMSupport.swift */,
+				3AD4469C1A6EF91700900CD2 /* Realm.framework */,
+				3AD446791A6EF8F000900CD2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3AD4468F1A6EF8F000900CD2 /* SirenWithRealmTests */ = {
+			isa = PBXGroup;
+			children = (
+				3AD446921A6EF8F000900CD2 /* SirenWithRealmTests.swift */,
+				3AD446901A6EF8F000900CD2 /* Supporting Files */,
+			);
+			path = SirenWithRealmTests;
+			sourceTree = "<group>";
+		};
+		3AD446901A6EF8F000900CD2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3AD446911A6EF8F000900CD2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3AD446A41A6EFA0600900CD2 /* Siren */ = {
+			isa = PBXGroup;
+			children = (
+				3AD446A51A6EFA0600900CD2 /* Siren.bundle */,
+				3AD446A61A6EFA0600900CD2 /* Siren.swift */,
+			);
+			path = Siren;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3AD446741A6EF8F000900CD2 /* SirenWithRealm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3AD446961A6EF8F000900CD2 /* Build configuration list for PBXNativeTarget "SirenWithRealm" */;
+			buildPhases = (
+				3AD446711A6EF8F000900CD2 /* Sources */,
+				3AD446721A6EF8F000900CD2 /* Frameworks */,
+				3AD446731A6EF8F000900CD2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SirenWithRealm;
+			productName = SirenWithRealm;
+			productReference = 3AD446751A6EF8F000900CD2 /* SirenWithRealm.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3AD4468B1A6EF8F000900CD2 /* SirenWithRealmTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3AD446991A6EF8F000900CD2 /* Build configuration list for PBXNativeTarget "SirenWithRealmTests" */;
+			buildPhases = (
+				3AD446881A6EF8F000900CD2 /* Sources */,
+				3AD446891A6EF8F000900CD2 /* Frameworks */,
+				3AD4468A1A6EF8F000900CD2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3AD4468E1A6EF8F000900CD2 /* PBXTargetDependency */,
+			);
+			name = SirenWithRealmTests;
+			productName = SirenWithRealmTests;
+			productReference = 3AD4468C1A6EF8F000900CD2 /* SirenWithRealmTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3AD4466D1A6EF8F000900CD2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Ceyhun OZUGUR";
+				TargetAttributes = {
+					3AD446741A6EF8F000900CD2 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					3AD4468B1A6EF8F000900CD2 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 3AD446741A6EF8F000900CD2;
+					};
+				};
+			};
+			buildConfigurationList = 3AD446701A6EF8F000900CD2 /* Build configuration list for PBXProject "SirenWithRealm" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3AD4466C1A6EF8F000900CD2;
+			productRefGroup = 3AD446761A6EF8F000900CD2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3AD446741A6EF8F000900CD2 /* SirenWithRealm */,
+				3AD4468B1A6EF8F000900CD2 /* SirenWithRealmTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3AD446731A6EF8F000900CD2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AD446A71A6EFA0600900CD2 /* Siren.bundle in Resources */,
+				3AD446821A6EF8F000900CD2 /* Main.storyboard in Resources */,
+				3AD446871A6EF8F000900CD2 /* LaunchScreen.xib in Resources */,
+				3AD446841A6EF8F000900CD2 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AD4468A1A6EF8F000900CD2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3AD446711A6EF8F000900CD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AD4467F1A6EF8F000900CD2 /* DetailViewController.swift in Sources */,
+				3AD4467D1A6EF8F000900CD2 /* MasterViewController.swift in Sources */,
+				3AD4467B1A6EF8F000900CD2 /* AppDelegate.swift in Sources */,
+				3AD446A81A6EFA0600900CD2 /* Siren.swift in Sources */,
+				3AD446A11A6EF92700900CD2 /* RLMSupport.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AD446881A6EF8F000900CD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AD446931A6EF8F000900CD2 /* SirenWithRealmTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3AD4468E1A6EF8F000900CD2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3AD446741A6EF8F000900CD2 /* SirenWithRealm */;
+			targetProxy = 3AD4468D1A6EF8F000900CD2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3AD446801A6EF8F000900CD2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3AD446811A6EF8F000900CD2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3AD446851A6EF8F000900CD2 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3AD446861A6EF8F000900CD2 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3AD446941A6EF8F000900CD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3AD446951A6EF8F000900CD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3AD446971A6EF8F000900CD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SirenWithRealm",
+				);
+				INFOPLIST_FILE = SirenWithRealm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3AD446981A6EF8F000900CD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SirenWithRealm",
+				);
+				INFOPLIST_FILE = SirenWithRealm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3AD4469A1A6EF8F000900CD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SirenWithRealmTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SirenWithRealm.app/SirenWithRealm";
+			};
+			name = Debug;
+		};
+		3AD4469B1A6EF8F000900CD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SirenWithRealmTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SirenWithRealm.app/SirenWithRealm";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3AD446701A6EF8F000900CD2 /* Build configuration list for PBXProject "SirenWithRealm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AD446941A6EF8F000900CD2 /* Debug */,
+				3AD446951A6EF8F000900CD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3AD446961A6EF8F000900CD2 /* Build configuration list for PBXNativeTarget "SirenWithRealm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AD446971A6EF8F000900CD2 /* Debug */,
+				3AD446981A6EF8F000900CD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3AD446991A6EF8F000900CD2 /* Build configuration list for PBXNativeTarget "SirenWithRealmTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AD4469A1A6EF8F000900CD2 /* Debug */,
+				3AD4469B1A6EF8F000900CD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3AD4466D1A6EF8F000900CD2 /* Project object */;
+}
